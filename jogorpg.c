@@ -27,15 +27,9 @@ int main()
     player1.xpmin = 30;
     player1.hpmax = 20 + (5 * player1.level);
 
-    struct monobehaviour slime = {"slimegay"};
-    struct monobehaviour coelho = {"coelhogay"};
-    coelho.ataq = 4 + (2 * coelho.level);
-    coelho.hp = 20 + (5 * coelho.level);
-    coelho.xp = 10 + (10 * coelho.level);
-    struct monobehaviour aranha = {"aranhagay"};
-    aranha.ataq = 4 + (3 * aranha.level);
-    aranha.hp = 15 + (2 * aranha.level);
-    aranha.xp = 10 + (8 * aranha.level);
+    struct monobehaviour slime = {"slime"};
+    struct monobehaviour coelho = {"coelho"};
+    struct monobehaviour aranha = {"aranha"};  
 
     printf("Bem vindo bravo guerreiro. Qual o seu nome?\n");
     scanf("%s", player1.nome);
